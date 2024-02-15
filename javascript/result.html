@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="result.css">
+        <title>result</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="5"><h1>SECONDARY & HIGER SECONDARY EDUCATION BOARD, GANDHINAGAR</h1><br><h4>Statement of Marks - Higher Secondary Certificate Examination-2012</h4></th>
+            </tr>
+            <tr>
+                <th>MONTH & YEAR OF THE EXAM</th>
+                <th>CENTER NO.</th>
+                <th>SCHOOL INDEX NO.</th>
+                <th>STREM</th>
+                <th>SR. NO. OF STATEMENT</th>
+            </tr>
+            <tr>
+                <td>MARCH-2012</td>
+                <td>072/04</td>
+                <td>18.205</td>
+                <td>GENERAL</td>
+                <td>207345</td>
+            </tr>
+            <tr>
+                <th>SEAT NO.</th>
+                <th colspan="4">CANDIDATE'S NAME</th>
+            </tr>
+            <tr>
+                <td>G 368670</td>
+                <td colspan="4">AMBALIYA AKASH</td>
+            </tr>
+            <tr>
+                <th>NAME OF THE SUBJECT WITH CODE NO.</th>
+                <th>TOTAL MARKS</th>
+                <th>MARKS OBTAINED</th>
+                <th>MARKS OBTAINED IN WORDS</th>
+                <th>SUBJECT WISE GRADE</th>
+            </tr>
+            <tr>
+                <td>001 GUJARATI (F.L)</td>
+                <td>100</td>
+                <td><input type="number" id="001"></td>
+                <td></td>
+                <td><p id="001-G"></p></td>
+            </tr>
+            <tr>
+                <td>013 ENGLISH (S.L)</td>
+                <td>100</td>
+                <td><input type="number" id="013"></td>
+                <td></td>
+                <td><p id="013-E"></p></td>
+            </tr>
+            <tr>
+                <td>022 ECONOMICS</td>
+                <td>100</td>
+                <td><input type="number" id="022"></td>
+                <td></td>
+                <td><p id="022-ECOM"></p></td>
+            </tr>
+            <tr>
+                <td>046 ORG OF COMM.</td>
+                <td>100</td>
+                <td><input type="number" id="046"></td>
+                <td></td>
+                <td><p id="046-ORG"></p></td>
+            </tr>
+            <tr>
+                <td>135 STATISTICS</td>
+                <td>100</td>
+                <td><input type="number" id="135"></td>
+                <td></td>
+                <td><p id="135-S"></p></td>
+            </tr>
+            <tr>
+                <td>154 ELEMENTS OF ACCT.</td>
+                <td>100</td>
+                <td><input type="number" id="154"></td>
+                <td></td>
+                <td><p id="154-ACC"></p></td>
+            </tr>
+            <tr>
+                <td>331 COMPUTER - T</td>
+                <td>100</td>
+                <td><input type="number" id="331"></td>
+                <td></td>
+                <td><p id="331-T"></p></td>
+            </tr>
+            <tr>
+                <th>OBTAINED MARKS OUT OF TOTAL MARKS</th>
+                <th>700</th>
+                <th id="total"></th>
+                <td></td>
+                <th><p id="result"></p></th>
+            </tr>
+            <tr>
+                <th>PERCENTAGE</th>
+                <th><p id="percentage"></p></th>
+                <th><p id="averagegrade"></p></th>
+            </tr>
+        </table>
+        
+
+        <button type="submit" onclick="btnclick()"> BtnClick</button>
+        <script>
+            function btnclick(){
+            var guj = parseFloat(document.getElementById("001").value);
+            var eng = parseFloat(document.getElementById("013").value);
+            var ecom = parseFloat(document.getElementById("022").value);
+            var org = parseFloat(document.getElementById("046").value);
+            var stat = parseFloat(document.getElementById("135").value);
+            var acct = parseFloat(document.getElementById("154").value);
+            var comt = parseFloat(document.getElementById("331").value);
+        
+
+           var total = guj + eng + ecom + org + stat + acct + comt;
+                document.getElementById("total").innerHTML= total;  
+                console.log(total)
+
+            if(guj>=91){
+                if(guj<=100){
+                    document.getElementById("001-G").innerHTML= "A";
+                   
+                }
+                else{
+                    alert("INVALID NUMBER")
+                    document.getElementById("001-G").innerHTML="INVALID NUMBER";
+                }
+            }
+            else if(guj>=71){
+                document.getElementById("001-G").innerHTML="B";
+            }
+            else if(guj>=51){
+                document.getElementById("001-G").innerHTML="C";
+            }
+            else if(guj>=35){
+                document.getElementById("001-G").innerHTML="D";
+            }
+            else if(guj>=0 && guj<=34){
+                document.getElementById("001-G").innerHTML="FAIL";
+            }
+            else{
+                alert("INVALID NUMBER")
+                document.getElementById("001-G").innerHTML="INVALID NUMBER";
+            }
+
+
+            if(eng>=91){
+                if(eng<=100){
+                    document.getElementById("013-E").innerHTML= "A";
+                }
+                else{
+                    alert("INVALID NUMBER")
+                    document.getElementById("013-E").innerHTML="INVALID NUMBER";
+                }
+            }
+            else if(eng>=71){
+                document.getElementById("013-E").innerHTML="B";
+            }
+            else if(eng>=51){
+                document.getElementById("013-E").innerHTML="C";
+            }
+            else if(eng>=35){
+                document.getElementById("013-E").innerHTML="D";
+            }
+            else if(eng>=0 && eng<=34){
+                document.getElementById("013-E").innerHTML="FAIL";
+            }
+            else{
+                alert("INVALID NUMBER")
+                document.getElementById("013-E").innerHTML="INVALID NUMBER";
+            }
+
+            if(ecom>=91){
+                if(ecom<=100){
+                    document.getElementById("022-ECOM").innerHTML= "A";
+                }
+                else{
+                    alert("INVALID NUMBER")
+                    document.getElementById("022-ECOM").innerHTML="INVALID NUMBER";
+                }
+            }
+            else if(ecom>=71){
+                document.getElementById("022-ECOM").innerHTML="B";
+            }
+            else if(ecom>=51){
+                document.getElementById("022-ECOM").innerHTML="C";
+            }
+            else if(ecom>=35){
+                document.getElementById("022-ECOM").innerHTML="D";
+            }
+            else if(ecom>=0 && ecom<=34){
+                document.getElementById("022-ECOM").innerHTML="FAIL";
+            }
+            else{
+                alert("INVALID NUMBER")
+                document.getElementById("022-ECOM").innerHTML="INVALID NUMBER";
+            }
+
+
+            if(org>=91){
+                if(org<=100){
+                    document.getElementById("046-ORG").innerHTML= "A";
+                }
+                else{
+                    alert("INVALID NUMBER")
+                    document.getElementById("046-ORG").innerHTML="INVALID NUMBER";
+                }
+            }
+            else if(org>=71){
+                document.getElementById("046-ORG").innerHTML="B";
+            }
+            else if(org>=51){
+                document.getElementById("046-ORG").innerHTML="C";
+            }
+            else if(org>=35){
+                document.getElementById("046-ORG").innerHTML="D";
+            }
+            else if(org>=0 && org<=34){
+                document.getElementById("046-ORG").innerHTML="FAIL";
+            }
+            else{
+                alert("INVALID NUMBER")
+                document.getElementById("046-ORG").innerHTML="INVALID NUMBER";
+            }
+
+
+            if(stat>=91){
+                if(stat<=100){
+                    document.getElementById("135-S").innerHTML= "A";
+                }
+                else{
+                    alert("INVALID NUMBER")
+                    document.getElementById("135-S").innerHTML="INVALID NUMBER";
+                }
+            }
+            else if(stat>=71){
+                document.getElementById("135-S").innerHTML="B";
+            }
+            else if(stat>=51){
+                document.getElementById("135-S").innerHTML="C";
+            }
+            else if(stat>=35){
+                document.getElementById("135-S").innerHTML="D";
+            }
+            else if(stat>=0 && stat<=34){
+                document.getElementById("135-S").innerHTML="FAIL";
+            }
+            else{
+                alert("INVALID NUMBER")
+                document.getElementById("135-S").innerHTML="INVALID NUMBER";
+            }
+
+
+            if(acct>=91){
+                if(acct<=100){
+                    document.getElementById("154-ACC").innerHTML= "A";
+                }
+                else{
+                    alert("INVALID NUMBER")
+                    document.getElementById("154-ACC").innerHTML="INVALID NUMBER";
+                }
+            }
+            else if(acct>=71){
+                document.getElementById("154-ACC").innerHTML="B";
+            }
+            else if(acct>=51){
+                document.getElementById("154-ACC").innerHTML="C";
+            }
+            else if(acct>=35){
+                document.getElementById("154-ACC").innerHTML="D";
+            }
+            else if(acct>=0 && acct<=34){
+                document.getElementById("154-ACC").innerHTML="FAIL";
+            }
+            else{
+                alert("INVALID NUMBER")
+                document.getElementById("154-ACC").innerHTML="INVALID NUMBER";
+            }
+
+
+            if(comt>=91){
+                if(comt<=100){
+                    document.getElementById("331-T").innerHTML= "A";
+                }
+                else{
+                    alert("INVALID NUMBER")
+                    document.getElementById("331-T").innerHTML="INVALID NUMBER";
+                }
+            }
+            else if(comt>=71){
+                document.getElementById("331-T").innerHTML="B";
+            }
+            else if(comt>=51){
+                document.getElementById("331-T").innerHTML="C";
+            }
+            else if(comt>=35){
+                document.getElementById("331-T").innerHTML="D";
+            }
+            else if(comt>=0 && comt<=34){
+                document.getElementById("331-T").innerHTML="FAIL";
+             }
+            else{
+                alert("INVALID NUMBER");
+                document.getElementById("331-T").innerHTML="INVALID NUMBER";
+            }
+
+            if (guj < 35 || eng < 35 || ecom < 35 || org < 35 || stat < 35 || acct < 35 || comt < 35){
+                 document.getElementById("result").innerHTML = "FAIL";
+                 document.getElementById("result").style.color = "red";
+            }
+            else{
+                document.getElementById("result").innerHTML = "PASS";
+                document.getElementById("result").style.color = "green";
+            }
+
+            var percentage=total/7
+                document.getElementById("percentage").innerHTML=percentage.toFixed(2);
+
+            var result=document.getElementById("result").value;
+
+            if (guj < 35 || eng < 35 || ecom < 35 || org < 35 || stat < 35 || acct < 35 || comt < 35){
+                document.getElementById("averagegrade").innerHTML="FAIL";
+                document.getElementById("averagegrade").style.color = "red";
+            }
+            else{    
+                document.getElementById("averagegrade").style.color = "black";
+                 if(percentage>=90){
+                        document.getElementById("averagegrade").innerHTML="A";
+                        
+                    }
+                    else if(percentage>=60){
+                        document.getElementById("averagegrade").innerHTML="B";
+                        
+                    }
+                    else if(percentage>=35){
+                        document.getElementById("averagegrade").innerHTML="C";
+                       
+                    }
+                }     
+
+        }
+        </script>
+    </body>
+</html>
+

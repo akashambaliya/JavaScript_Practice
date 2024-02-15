@@ -1,0 +1,143 @@
+<html>
+<body>
+<div>
+    <h4>1.Check if a number is odd or even in JavaScript</h4>
+    <p id="A"></p>
+    <button onclick="myFunction()">Click</button>
+   <script>
+    function myFunction(){
+        var A = prompt("Enter the Number"); 
+        if(A%2==0){
+            document.getElementById("A").innerHTML= "Even Number";
+        }
+        else{ 
+            document.getElementById("A").innerHTML= "old Number";
+        }
+    }
+    </script>
+</div>
+<div>
+    <h4>2.Find the largest of two number</h4>
+    <p id="nbr"></p>
+    <button onclick="nbr1()">Click</button>
+    <script>
+    function nbr1(){
+        var A = prompt("Enter the First Number")
+        var B = prompt("Enter the Second Number")
+        if(A>B){
+            document.getElementById("nbr").innerHTML= A + " largest number";
+        }
+        else{
+            document.getElementById("nbr").innerHTML= B + " largest number";
+        }
+    }
+    </script>
+</div>
+<div>
+    <h4>3.Find the largest of three number</h4>
+    <p id="nbr1"></p>
+    <button onclick="nbr2()">Click</button>
+    <script>
+        function nbr2(){
+        var A = prompt("Enter the First Number");
+        var B = prompt("Enter the Second Number");
+        var C = prompt("Enter the third Number");
+
+        if(A>B && A>C){
+            document.getElementById("nbr1").innerHTML = A + " largest number";
+        }
+        else if(B>A && B>C){
+            document.getElementById("nbr1").innerHTML = B + " largest number";
+        }
+        else{
+            document.getElementById("nbr1").innerHTML = C + " largest number";
+        }
+    }
+    </script>
+</div>
+<div>
+    <h4>4.Check if a triangle is equilateral, scalene, or isosceles</h4>
+    <p id="triangle"></p>
+    <button onclick="nbr3()">Click</button>
+
+    <script>
+        function nbr3(){
+        var side1 = prompt("Enter the First Number");
+        var side2 = prompt("Enter the Second Number");
+        var side3 = prompt("Enter the Third Number");
+
+        if(side1==side2 && side2==side3){
+            document.getElementById("triangle").innerHTML= "Equilateral triangle.";
+        }
+        else if(side1==side2 || side1==side3 || side2==side3){
+            document.getElementById("triangle").innerHTML= "Isosceles triangle.";
+        }
+        else{
+            document.getElementById("triangle").innerHTML= "Scalene triangle.";
+        }
+    }
+    </script>
+</div>  
+<div>
+    <h4>5.Find the a number is present in given range</h4>
+    <p id="range"></p>
+    <button onclick="range()">Click</button>
+
+    <script>
+        function range(){
+            var A = prompt("Enter the Number");
+            if(A>0 && A<=100){
+                document.getElementById("range").innerHTML = "Number is present in range";
+            }else{
+                document.getElementById("range").innerHTML = "Number is Not present in range";
+            }
+        }
+    </script>
+</div>
+<div>
+    <h4>6. Find check if a year is leap year or not</h4>
+    <p id="leap"></p>
+    <button onclick="leap()">Click</button>
+
+    <script>
+        function leap(){
+        var leap = prompt("Enter Year");
+        if(leap%4== 0){
+            document.getElementById("leap").innerHTML = leap + " is leap Year"
+        }
+        else{
+            document.getElementById("leap").innerHTML = leap + " is Not leap Year"
+        }
+    }
+    </script>
+</div>
+<div>
+    <h4>7.Find the grade for input marks.</h4>
+    <p id="guj"></p>
+    <p id="eng"></p>
+    <p id="math"></p>
+    <p id="com"></p>
+    <p id="total"></p>
+    <button onclick="result()">Click</button>
+
+    <script>
+        function result(){
+        var guj = parseFloat(prompt("Enter gujarati mark"));
+            document.getElementById("guj").innerHTML = "gujarati " + guj 
+        var eng = parseFloat(prompt("Enter english mark"));
+            document.getElementById("eng").innerHTML = "english " + eng
+        var math = parseFloat(prompt("Enter maths mark"));
+            document.getElementById("math").innerHTML = "maths " + math
+        var com = parseFloat(prompt("Enter computer mark"));
+            document.getElementById("com").innerHTML = "computer " + com
+        
+        var total = guj+eng+math+com;
+            document.getElementById("total").innerHTML = "total " + total; 
+    }
+    </script>
+
+</div>
+
+
+</body>
+</html>

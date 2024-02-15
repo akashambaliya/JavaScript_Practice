@@ -1,0 +1,179 @@
+<html>
+<body>
+<div>
+    <h4>1.Check if a number is odd or even in JavaScript</h4>
+    <p id="NO"></p>
+    <script>
+        var NO = 4
+        if(NO==0){
+            document.getElementById('NO').innerHTML="This number is 0"
+        }
+        else if(NO % 2 == 0){
+            document.getElementById("NO").innerHTML= 'This number is even'
+        }else{
+            document.getElementById("NO").innerHTML= 'This number is old'
+        }
+    </script>
+</div>
+<div>
+    <h4>2.Find the largest of two number</h4>
+    <p id="A"></p>
+   
+    <script>
+        var A=99
+        var B=111
+        if(A>B){
+            document.getElementById("A").innerHTML= A+"=number largest"
+        }else if(A<B){
+            document.getElementById("A").innerHTML= B+ "=number largest"
+        }else{
+            document.getElementById("A").innerHTML= "SAME NUMBER"
+        }
+    </script>
+</div>
+<div>
+    <h4>3.Find the largest of three number</h4>
+    <p id="X"></p>
+    <script>
+        var X=3
+        var Y=1
+        var Z=3
+        if(X>Y && X>Z){
+            document.getElementById("X").innerHTML= X+ "= largest number"
+        }else if(Y>X && Y>Z){
+            document.getElementById("X").innerHTML= Y+ "= largest number"
+        }else{
+            document.getElementById("X").innerHTML= Z+ "= largest number"
+        }
+    </script>
+</div>
+<div>
+    <h4>4.Check if a triangle is equilateral, scalene, or isosceles</h4>
+    <p id="O"></p>
+    <script>
+        var side1=30
+        var side2=30
+        var side3=30
+        if(side1==side2 && side2==side3){
+            document.getElementById("O").innerHTML= "Equilateral triangle"
+        }else if(side1==side2 || side2==side3 || side1==side3){
+            document.getElementById("O").innerHTML= "Isosceles triangle"
+        }else{
+            document.getElementById("O").innerHTML= "Scalene triangle"
+        }
+    </script>
+</div>
+<div>
+    <h4>5.Find the a number is present in given range</h4>
+    <p id="E"></p>
+    <script>
+        var E=19
+        if(E>=0 && E<=100){
+            document.getElementById("E").innerHTML= "Number is present in range"
+        }else{
+            document.getElementById("E").innerHTML= "Number is Not present in range"
+        }
+    </script>
+</div>
+<div>
+    <h4>6.Find check if a year is leap year or not</h4>
+    <p id="year"></p>
+    <script>
+        var year=100
+        if(year % 4 == 0){
+            document.getElementById("year").innerHTML= year+" is leap year"
+        }else{
+            document.getElementById("year").innerHTML= year+" is not leap year"
+        }
+    </script>
+</div>
+<div>
+    <h4>7.Find the grade for input marks</h4>
+    <p id="marks"></p>
+    <p id="avg"></p>
+    <p id="grade"></p>
+    <script>
+        var guj=89
+        var eng=90
+        var sc=50
+        var maths=70
+        var com=85
+        var sum=guj+eng+ssc+maths+com
+            document.getElementById("marks").innerHTML= "total marks="+sum
+        var avg=sum/5
+            document.getElementById("avg").innerHTML= "total average="+avg
+        if(avg>=90){
+            document.getElementById("grade").innerHTML= "Grade A"
+        }else if(avg>=80){
+            document.getElementById("grade").innerHTML= "Grade B"
+        }else if(avg>=70){
+            document.getElementById("grade").innerHTML= "Grade C"
+        }else if(avg>=60){
+            document.getElementById("grade").innerHTML= "Grade D"
+        }
+    </script>
+</div>
+<div>
+    <h4>8.Perform arithmetic operations on two numbers</h4>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <p id="mod"></p>
+    <p id="exp"></p>
+    <p id="inc"></p>
+    <p id="dec"></p>
+    <script>
+        var A1,A2,add,sub,mul,div,mod,exp,inc,dec
+        A1=30
+        A2=2
+        add=A1+A2
+            document.getElementById("add").innerHTML= "addition="+add
+        sub=A1-A2
+            document.getElementById("sub").innerHTML= "subtraction="+sub
+        mul=A1*A2
+            document.getElementById("mul").innerHTML= "multiplication="+mul
+        div=A1/A2
+            document.getElementById("div").innerHTML= "division="+div
+        mod=A1%A2
+            document.getElementById("mod").innerHTML= "modulus="+mod
+        exp=A1**A2
+            document.getElementById("exp").innerHTML= "exponentiation="+exp
+        inc=A1++
+            document.getElementById("inc").innerHTML= "increment="+A1
+        dec=--A2
+            document.getElementById("dec").innerHTML= "decrement="+dec
+
+    </script>
+</div>
+<div>
+    <h4>9.sort three numbers</h4>
+    <p id="sort"></p>
+    <script>
+        var N1,N2,N3
+        N1=4
+        N2=3
+        N3=5
+        if(N1>N2 && N1>N3){
+            if(N2>N3){
+                document.getElementById("sort").innerHTML= N1+","+N2+","+N3
+            }else{
+                document.getElementById("sort").innerHTML= N1+","+N3+","+N2
+            }
+        }else if(N2>N1 && N2>N3){
+            if(N1>N3){
+                document.getElementById("sort").innerHTML= N2+","+N1+","+N3
+            }else{
+                document.getElementById("sort").innerHTML= N2+","+N3+","+N1
+            }
+        }else if(N3>N1 && N3>N2){
+            if(N1>N2){
+                document.getElementById("sort").innerHTML= N3+","+N1+","+N2
+            }else{
+                document.getElementById("sort").innerHTML= N3+","+N2+","+N1
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

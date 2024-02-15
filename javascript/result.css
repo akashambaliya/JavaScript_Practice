@@ -1,0 +1,15 @@
+body{
+    margin: 0%; 
+}
+
+table,th,tr,td{
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+h1{ 
+    margin: 0;
+}   
+input[type="number"]{
+    border: none;
+}

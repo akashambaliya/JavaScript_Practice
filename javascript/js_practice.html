@@ -1,0 +1,916 @@
+<html>
+<body>
+<div>
+    <h4>1.Check if a number is odd or even in JavaScript</h4>
+    <p id="NO"></p>
+    <script>
+        var NO = 4
+        if(NO==0){
+            document.getElementById('NO').innerHTML="This number is 0"
+        }
+        else if(NO % 2 == 0){
+            document.getElementById("NO").innerHTML= 'This number is even'
+        }else{
+            document.getElementById("NO").innerHTML= 'This number is old'
+        }
+    </script>
+</div>
+<div>
+    <h4>2.Find the largest of two number</h4>
+    <p id="A"></p>
+    <p id="B"></p>
+    <script>
+        var A=99
+        var B=111
+        if(A>B){
+            document.getElementById("A").innerHTML= A+"=number largest"
+        }else if(A<B){
+            document.getElementById("A").innerHTML= B+ "=number largest"
+        }else{
+            document.getElementById("A").innerHTML= "SAME NUMBER"
+        }
+    </script>
+</div>
+<div>
+    <h4>3.Find the largest of three number</h4>
+    <p id="X"></p>
+    <script>
+        var X=3
+        var Y=1
+        var Z=3
+        if(X>Y && X>Z){
+            document.getElementById("X").innerHTML= X+ "= largest number"
+        }else if(Y>X && Y>Z){
+            document.getElementById("X").innerHTML= Y+ "= largest number"
+        }else{
+            document.getElementById("X").innerHTML= Z+ "= largest number"
+        }
+    </script>
+</div>
+<div>
+    <h4>4.Check if a triangle is equilateral, scalene, or isosceles</h4>
+    <p id="O"></p>
+    <script>
+        var side1=30
+        var side2=30
+        var side3=30
+        if(side1==side2 && side2==side3){
+            document.getElementById("O").innerHTML= "Equilateral triangle"
+        }else if(side1==side2 || side2==side3 || side1==side3){
+            document.getElementById("O").innerHTML= "Isosceles triangle"
+        }else{
+            document.getElementById("O").innerHTML= "Scalene triangle"
+        }
+    </script>
+</div>
+<div>
+    <h4>5.Find the a number is present in given range</h4>
+    <p id="E"></p>
+    <script>
+        var E=19
+        if(E>=0 && E<=100){
+            document.getElementById("E").innerHTML= "Number is present in range"
+        }else{
+            document.getElementById("E").innerHTML= "Number is Not present in range"
+        }
+    </script>
+</div>
+<div>
+    <h4>6.Find check if a year is leap year or not</h4>
+    <p id="year"></p>
+    <script>
+        var year=100
+        if(year % 4 == 0){
+            document.getElementById("year").innerHTML= year+" is leap year"
+        }else{
+            document.getElementById("year").innerHTML= year+" is not leap year"
+        }
+    </script>
+</div>
+<div>
+    <h4>7.Find the grade for input marks</h4>
+    <p id="marks"></p>
+    <p id="avg"></p>
+    <p id="grade"></p>
+    <script>
+        var guj=89
+        var eng=90
+        var sc=50
+        var maths=70
+        var com=85
+        var sum=guj+eng+sc+maths+com;  
+            document.getElementById("marks").innerHTML= "total marks="+sum
+        var avg=sum/5
+            document.getElementById("avg").innerHTML= "total average="+avg
+        if(avg>=90){
+            document.getElementById("grade").innerHTML= "Grade A"
+        }else if(avg>=80){
+            document.getElementById("grade").innerHTML= "Grade B"
+        }else if(avg>=70){
+            document.getElementById("grade").innerHTML= "Grade C"
+        }else if(avg>=60){
+            document.getElementById("grade").innerHTML= "Grade D"
+        }
+    </script>
+</div>
+<div>
+    <h4>8.Perform arithmetic operations on two numbers</h4>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <p id="mod"></p>
+    <p id="exp"></p>
+    <p id="inc"></p>
+    <p id="dec"></p>
+    <script>
+        var A1,A2,add,sub,mul,div,mod,exp,inc,dec
+        A1=30
+        A2=2
+        add=A1+A2
+            document.getElementById("add").innerHTML= "addition="+add
+        sub=A1-A2
+            document.getElementById("sub").innerHTML= "subtraction="+sub
+        mul=A1*A2
+            document.getElementById("mul").innerHTML= "multiplication="+mul
+        div=A1/A2
+            document.getElementById("div").innerHTML= "division="+div
+        mod=A1%A2
+            document.getElementById("mod").innerHTML= "modulus="+mod
+        exp=A1**A2
+            document.getElementById("exp").innerHTML= "exponentiation="+exp
+        inc=A1++
+            document.getElementById("inc").innerHTML= "increment="+A1
+        dec=--A2
+            document.getElementById("dec").innerHTML= "decrement="+dec
+
+    </script>
+</div>
+<div>
+    <h4>9.sort three numbers</h4>
+    <p id="sort"></p>
+    <script>
+        var N1,N2,N3;
+        N1="4"
+        N2="7"
+        N3="1"
+        if(N1>N2 && N1>N3){
+            if(N2>N3){
+                document.getElementById("sort").innerHTML= N1+","+N2+","+N3
+            }else{
+                document.getElementById("sort").innerHTML= N1+","+N3+","+N2
+            }
+        }else if(N2>N1 && N2>N3){
+            if(N1>N3){
+                document.getElementById("sort").innerHTML= N2+","+N1+","+N3
+            }else{
+                document.getElementById("sort").innerHTML= N2+","+N3+","+N1
+            }
+        }else if(N3>N1 && N3>N2){
+            if(N1>N2){
+                document.getElementById("sort").innerHTML= N3+","+N1+","+N2
+            }else{
+                document.getElementById("sort").innerHTML= N3+","+N2+","+N1
+            }
+        }
+    </script>
+    <!-- <div>
+        <input type="number" id="demo1" >
+        <input type="number" id="demo2" >
+        <p id="demo3"></p>
+        <button type="submit" onclick="btnclick()">BtnClick</button>
+        <script>
+            function btnclick(){
+                var no = document.getElementById('demo1').value;
+                var no = document.getElementById('demo2').value;
+                var total
+
+               total = [demo1+demo2]
+                    document.getElementById('demo3').innerHTML= total
+                    console.log('demo3')
+                if(no % 2==0){
+                    alert('even number')
+                    document.getElementById('demo3').innerHTML= "even number"
+                 }
+            }
+        </script>
+    </div> -->
+
+</div>
+<!-- <div>
+    <input type="number" id="demo1">
+    <button onclick="btn()">check</button>
+    
+    <script>
+        function btn(){
+            var no = document.getElementById('demo1').value;
+            if(no%2 ==0){
+                console.log('even');
+            }
+            else{
+                console.log('odd')
+            }
+        }
+    </script>
+</div> -->
+<!-- <div>
+    <input type="number" id="demo1">
+    <button onclick="btn()">check</button>
+    
+    <script>
+        function btn(){
+            var no = document.getElementById('demo1').value;
+            if(no%2 ==0){
+                alert("even");
+                // console.log('even');
+            }
+            else{
+                alert("odd");
+                // console.log('odd')
+            }
+        }
+    </script>
+</div> -->
+
+<div>
+    <h4>1. Take 2 user input of number and perform Sum, Subtraction, Multiplication and Division on submit</h4>
+    <input type="number" id="no1">
+    <input type="number" id="no2">
+    <p id="C"></p>
+
+    <button onclick="sum()">Sum</button>
+    <button onclick="subtraction()">Subtraction</button>
+    <button onclick="multiplication()">Multiplication</button>
+    <button onclick="division()">Division</button>
+    
+    <script>
+        function sum(){
+            var no1=parseFloat(document.getElementById("no1").value);
+            var no2=parseFloat(document.getElementById("no2").value);
+            var C
+
+            C = no1 + no2;
+            document.getElementById("C").innerHTML= "Sum = " + C;
+        }
+        function subtraction(){
+            var no1=parseFloat(document.getElementById("no1").value);
+            var no2=parseFloat(document.getElementById("no2").value);
+            
+            var C= no1 - no2;
+            document.getElementById("C").innerHTML="Subtraction = " + C;
+        }
+        function multiplication(){
+            var no1=parseFloat(document.getElementById("no1").value);
+            var no2=parseFloat(document.getElementById("no2").value);
+
+            var C= no1 * no2;
+            document.getElementById("C").innerHTML="multiplication = "+C;
+        }
+        function division(){
+            var no1=parseFloat(document.getElementById("no1").value);
+            var no2=parseFloat(document.getElementById("no2").value);
+
+            var C= no1 / no2;
+            document.getElementById("C").innerHTML="division = "+C;
+        }
+    </script>
+</div>
+<div>
+    <h4>2. Take input from user and check datatype. If data type is not string then print square root of inputted value or print last 
+        3 character</h4>
+    
+    <input type="text" id="user_data">
+    <p id="type"></p>
+    <p id="print3"></p>
+    <button onclick="data()">srtng</button>
+    <button onclick="number()">number</button>
+
+    <script>
+        function data(){
+            var data=document.getElementById("user_data").value;
+            document.getElementById("type").innerHTML=typeof data;
+ 
+            var print3=data.substr(-3);
+            document.getElementById("print3").innerHTML="Last 3 Character = "+print3
+       }
+       function number(){
+            var data=parseFloat(document.getElementById("user_data").value);
+            document.getElementById("type").innerHTML=typeof data;
+ 
+            var print3=Math.sqrt(data);
+            document.getElementById("print3").innerHTML="square root = "+print3
+       }
+    </script>
+</div>
+<div>
+   <h4>3. Take integer input from user and check either even or odd.</h4>
+   <input type="number" id="odd/even">
+   <p id="no"></p>
+   <button onclick="oddeven()">ODD/EVEN</button>
+
+   <script>
+    function oddeven(){
+        var NO = parseFloat(document.getElementById("odd/even").value);
+        
+        if(NO%2==0){
+            document.getElementById("no").innerHTML= "Even Number"
+        }
+        else{
+            document.getElementById("no").innerHTML= "Odd Number"
+        }
+    }
+   </script>
+</div>
+<div>
+    <h4>4. Take user input as string and  On button hover get inputted value and get only first 5 character from string and print.</h4>
+    <input type="text" id="string">
+    <p id="text"></p>
+    <button onmouseover="srt()">Mouse Over</button>
+
+    <script>
+        function srt(){
+            var str=document.getElementById("string").value;
+
+            var text=str.substr(0,5)
+            document.getElementById("text").innerHTML=text;
+
+
+        }
+    </script>
+</div>
+<div>
+    <h4>5. Take 3 user input. For first user slice to get last 10 character, for second use substring and get 5 <br>
+        character from 7th character, for 3rd use substr and get first 7 character and print.</h4>
+
+    <input type="text" id="slice">
+    <p id="text1"></p>
+    <button onclick="slice()">Slice</button>
+<br>
+    <script>
+        function slice(){
+            var text1=document.getElementById("slice").value;
+
+            var slice=text1.slice(-10);
+            document.getElementById("text1").innerHTML= slice;
+        }
+    </script>
+<br>
+    <input type="text" id="substring">
+    <p id="text2"></p>
+    <button onclick="substring()">Substring</button>
+<br>
+    <script>
+        function substring(){
+            var text2=document.getElementById("substring").value;
+
+            var substring = text2.substring(5,12);
+            document.getElementById("text2").innerHTML= substring;
+        }
+    </script>
+<br>
+    <input type="text" id="substr">
+    <p id="text3"></p>
+    <button onclick="substr()">Substr</button>
+<br>
+    <script>
+        function substr(){
+            var text3=document.getElementById("substr").value;
+
+            var substr=text3.substr(0,7);
+            document.getElementById("text3").innerHTML= substr;
+        }
+    </script>
+</div>
+<div>
+    <h4>6. on mouse hover set input value "Test" and on mouse out set input value "Out"</h4>
+    <input type="text" id="value" onmouseover="hover()" onmouseout="out()">
+
+    <script>
+        function hover(){
+            document.getElementById("value").value = "test";
+        }
+        function out(){
+            document.getElementById("value").value = "out";
+        }
+    </script>
+
+<!-- <h4>6. on mouse hover set input value "Test" and on mouse out set input value "Out"</h4>
+<input type="text" id="value" onmouseover="setInputValue('test')" onmouseout="setInputValue('out')">
+
+<script>
+    function setInputValue(value){
+        document.getElementById("value").value = value;
+    }
+</script> -->
+</div>
+<div>
+    <h4>7. on up key press increase input type number value and on down key decrease input type number value</h4>
+
+    <input type="number" id="value" value="0"> 
+    
+</div>
+
+<div>
+   <h4>8.Take 2 user input of number and perform Sum, Subtraction, Multiplication and Division on switch case</h4> 
+
+    <input type="number" id="firstnumber" placeholder="First Number">
+    <input type="number" id="secondnumber" placeholder="Second Number">
+    <input id="oprt" placeholder="operater +,-,*,/">
+    
+    <p id="total"></p>
+
+    <button onclick="operater()">RESULT</button>
+
+    <script>
+        
+        function operater(){
+
+        var A = parseFloat(document.getElementById("firstnumber").value);
+        var B = parseFloat(document.getElementById("secondnumber").value);
+        var oprt = document.getElementById("oprt").value;
+
+
+        switch(oprt){
+            case("+") :
+                total=A+B;
+                document.getElementById("total").innerText="total = "+total;
+                break;
+            case("-"):
+                total=A-B;
+                document.getElementById("total").innerHTML="total = "+total;
+                break;
+            case("*"):
+                total=A*B;
+                document.getElementById("total").innerHTML="total = "+total;
+                break;
+            case("/"):
+                if(B==0){
+                    document.getElementById("total").innerHTML="Second Zore Not Allow";
+                }
+                else{
+                    total=A/B;
+                    document.getElementById("total").innerHTML="total = "+total;
+                }
+            }
+         }
+    </script>
+
+<h4>8.Take 2 user input of number and perform Sum, Subtraction, Multiplication and Division on switch case</h4> 
+    
+    <button onclick="switchcase()">Click</button>
+    
+    <script>
+        function switchcase(){
+            var no1 = parseFloat(prompt("Enter First Number"));
+            var no2 = parseFloat(prompt("Enter Second Number"));
+            var operater = prompt("Use Operater +,-,*,/");
+            var total;
+
+            switch(operater){
+                case("+"):
+                    total = no1+no2;
+                    break;
+                case("-"):
+                    total=no1-no2;
+                    break;
+                case("*"):
+                    total=no1*no2;
+                    break;
+                case("/"):
+                    if(no2==0){
+                        total = "zero not allow";
+                    }
+                    else{
+                        total=no1/no2;
+                        break;
+                    }
+            }
+
+            alert("Total : " +total);
+        }    
+    </script>
+</div>
+<div>
+    <h4>1. Take user input as string, if string length greater than 8 then print 3 character else replace entire string with "Good".</h4>
+    
+    <input id="rply">
+    <p id="count"></p>
+    <p id="slc"></p>
+    <button onclick="count()">Click</button>
+    
+    <script>
+        function count(){
+            var good = document.getElementById("rply").value;
+            var lnt = good.length;
+            
+            if(lnt>8){
+                var count1 = good.slice(0,3);
+                document.getElementById("slc").innerHTML= count1;   
+            }
+            else{
+                document.getElementById("slc").innerHTML = good.replace(good,"GOOD");
+            }
+        }
+    </script>
+</div>
+<div>
+    <h4>2. Take user input as  string, if string length less than 8 than pad string from starting and complete 10 character string <br> 
+        else pad string from end and complete 15 character string.</h4>
+    
+    <input type="text" id="inpt">
+    <p id="inpt1"></p>
+
+    <button onclick="Clicks()">Click</button>
+    <script>
+        function Clicks(){
+            var inpt = document.getElementById("inpt").value;
+            var count = inpt.length;
+            console.log(count);
+
+            if(count<8){
+                var inpt = inpt.padStart(10,"A");
+                document.getElementById("inpt1").innerHTML=inpt;
+            }
+            else{
+                var inpt = inpt.padEnd(15,"B");
+                document.getElementById("inpt1").innerHTML=inpt;
+            }
+        }
+    </script>
+</div>
+<div>
+    <h4>3.  Take user input as string, if fourth character is 'i" then replace all "i" with "o", else 2nd character is "e" then check <br>
+        ASCII or Unicode value, if  ASCII or Unicode value is greater then 65 then print last 2 character. else make all character as<br>
+         upper case and print.</h4>
+
+    <input id="mianinpt">
+    <p id="print2"></p>
+    <p id="print"></p>
+    
+    <button onclick="Click()">CLICK</button>
+    <script>
+        function Click(){
+            var inpt = document.getElementById("mianinpt").value;
+            var inpt1 = inpt.charAt(3)
+           
+            if(inpt1=="i" || inpt1=="I"){
+                if(inpt1=="i"){
+                    inpt = inpt.replace(/i/g,"o");
+                }
+                else{
+                    inpt = inpt.replace(/I/g,"O");
+                }
+                document.getElementById("print").innerHTML=inpt;
+            }
+            else{
+                var inpt1 = inpt.charAt(1);
+                if(inpt1=="e" || inpt1=="E"){
+                    var modify_inpt1=inpt.charCodeAt(1);
+
+                    if(modify_inpt1 > 65){
+                        var inpt = inpt.slice(-2);
+                        document.getElementById("print2").innerHTML= "ASCII value = " + modify_inpt1;
+                        
+                    }
+                    else{
+                        var inpt = inpt.toUpperCase();
+
+                    }
+                    document.getElementById("print").innerHTML=inpt;
+                }
+                else{
+                    var inpt = inpt.toUpperCase();
+                    document.getElementById("print").innerHTML=inpt;
+                }
+            }
+        }
+    </script>
+</div>
+<div>
+    <h4>1. Create array and print reverse</h4>
+    var frien_dname = ["akash","satish","mitul","ankit","hiren","akshay"]
+    <p id="org"></p>
+    <p id="rev"></p>
+    <script>
+        var friend_name = ["akash","satish","mitul","ankit","hiren","akshay"];
+
+        document.getElementById("org").innerHTML = friend_name;
+        var reverse_arry = [];
+        var friend_count =  friend_name.length;
+        // console.log(friend_count)
+        
+        for( var i = friend_count-1; i >= 0; i--){ 
+            // console.log(friend_name[i]);
+            reverse_arry.push(friend_name[i]);
+            // console.log(reverse_arry);      
+        }
+     document.getElementById("rev").innerHTML = reverse_arry;
+    </script>
+</div>
+<div>
+    <h4>2.Create an array with string and number. If number is less than 10 then delete from array.</h4>
+    
+    <p id="mix"></p>
+    <p id="update"></p>
+
+    <script>
+        var mix_arry = ["akash",2,"mitul",10,34,9,"hiren","ankit",64,23,5,"test",7,12]
+        document.getElementById("mix").innerHTML = mix_arry;
+        for(var i=0; i<mix_arry.length; i++){
+            if(typeof mix_arry[i] == "number" && mix_arry[i]<10){
+                // mix_arry[i] = 0;
+                // mix_arry.splice(i,1);
+                mix_arry.splice(i,1);
+            }
+        }
+        document.getElementById("update").innerHTML = "final Array = " + mix_arry;
+    </script>
+</div>
+<div>
+    <h4>3.Create string with comma saperated. Convert string into array by coma delimeter and print only string value from array.
+    </h4>
+    <p id="newstring"></p>
+    <p id="OldArry"></p>
+    <p id="NewArry"></p>
+
+    <script>
+        let string = "akash,hiren,8,mitul,10,6,ankit";
+        document.getElementById("newstring").innerHTML= "string = " + string
+        // console.log(string);
+        
+        let string_arry = string.split(',');
+        document.getElementById("OldArry").innerHTML= "string_arry = " + string_arry
+        // console.log(string_arry);
+
+        for(i=0; i < string_arry.length; i++){
+            if(!parseInt(string_arry[i])){
+                //  console.log(string_arry[i]);
+            }
+        }
+    document.getElementById("NewArry").innerHTML= "NewArry = " + string_arry[i];
+    </script>
+</div>
+<div>
+    <h4>1. Create an array with mix data like string and integer. Check array value is string or number. 
+        if value is string then replace "s" with "p" and transform to upper case.<br> 
+        if array value is number then check if odd or even. if number is even and less than 10 then add new value to array equal to number. 
+        if number is odd and less than 5 then delete last array value.</h4>
+    <p id="CheckArry"></p>
+    <script>
+        var TestArry = ["akash",8,"mitul",64,3,"test",7,12,"vikas"]
+        
+        for(i=0; i < TestArry.length; i++){
+            // console.log(TestArry[i] ,'===>', typeof(TestArry[i]));
+            
+            if(typeof(TestArry[i]) === "string"){
+                TestArry[i] = TestArry[i].replace(/s/g, 'p').toUpperCase();
+                // console.log(TestArry)
+            }else if(typeof(TestArry[i]) === "number"){
+                if(TestArry[i] % 2 === 0 && TestArry[i]<=10){ 
+                    for(q=0; q < TestArry[i]; q++) {
+                        TestArry.push('ak1');
+                    }  
+                }else if(TestArry[i] % 2 !== 0 && TestArry[i] < 5){
+                    TestArry.pop();
+                }
+            }
+        }
+        document.getElementById("CheckArry").innerHTML = TestArry;
+    </script>
+</div>
+<div>
+    <h4>1.1 Write a new string, change the case to opposite and return the resulting string.</h4>
+    <p id="NEWString"></p>
+    <p id="updateString"></p>
+    
+    <script>
+        let newstring  = "AkashAMBaliya";
+        let newUpdateString = "";
+        document.getElementById("NEWString").innerHTML = newstring;
+        
+        for(i=0; i < newstring.length; i++){
+            // console.log(newstring[i]);
+            if(newstring.charAt(i) == newstring.charAt(i).toUpperCase()){
+                newUpdateString += newstring.charAt(i).toLowerCase()
+                // console.log(newUpdateString += newstring.charAt(i).toLowerCase());
+            }
+            else{
+                newUpdateString +=  toString = newstring.charAt(i).toUpperCase()
+                // console.log(newUpdateString +=  toString = newstring.charAt(i).toUpperCase());
+            }
+        }document.getElementById("updateString").innerHTML = newUpdateString;
+    </script>
+</div>
+<div>
+    <h4>1.2 Write a new string, change the case to opposite and return the resulting string.</h4>
+    <p id="NEWString1"></p>
+    <p id="updateString1"></p>
+    <script>
+        let newstring1 = "AkashAMBaliya";
+        let newUpdateString1 = "";
+        document.getElementById("NEWString1").innerHTML = newstring;
+
+        for (let char of newstring1) {
+            // console.log(char);
+            if (char === char.toUpperCase()) {
+                newUpdateString1 += char.toLowerCase();
+            } else {
+                newUpdateString1 += char.toUpperCase();
+            }
+        }
+        document.getElementById("updateString1").innerHTML = newUpdateString1;
+    </script>
+</div>
+<div>
+    <h4>1.3 Write a new string, change the case to opposite and return the resulting string.</h4>
+    <p id="NEWString2"></p>
+    <p id="updateString2"></p>
+    <script>
+        let newstring2 = "AkashAMBaliya";
+        let newUpdateString2 = "";
+        
+        document.getElementById("NEWString2").innerHTML = newstring2;
+        
+        let index = 0
+        let char1 = newstring2[index];
+        
+        while(char1){
+            if (char1 === char1.toUpperCase()) {
+                newUpdateString2 += char1.toLowerCase();
+            } else {
+                newUpdateString2 += char1.toUpperCase();
+            }
+            index++;
+            char1 = newstring2[index];
+        }document.getElementById("updateString2").innerHTML = newUpdateString2;
+    </script>
+</div>
+<div>
+    <h4>1.4 Write a new function that takes a string and uses .map, change the case to opposite and return the resulting string.</h4>
+    <p id="NEWString3"></p>
+    <p id="updateString3"></p>
+    <script>
+        let newstring3 = "AkashAMBaliya";
+        // let newUpdateString3 = "";
+        
+        document.getElementById("NEWString3").innerHTML = newstring3;
+
+    //    let newUpdateString3 = newstring3.map(test);
+        function test(){
+          
+        }
+    </script>
+</div>
+<div>
+    <h4>2. Write a program to take an array and check array length. if array length is greater then 5 then check each value and any<br>
+        string value is starting from "s" then remove first value. If intentger value is less then 25 then add 2 decimal value to number.<br>
+        If array value is float value then set ceiling value.</h4>
+    
+    <p id="ArryLength"></p>
+    <p id="FinalArryLength"></p>
+    <script>
+        var ArryLength = ["skash",12,"vikas",4.6,24,"agar",6.5,"nkit",23,"satish",15,"ajay"];
+        document.getElementById("ArryLength").innerHTML = ArryLength;
+        
+        for(i=0; i < ArryLength.length; i++){
+            
+            if(typeof ArryLength[i] === "string" && ArryLength[i].startsWith('s')){
+                ArryLength.splice(0,1);
+                i--;
+                
+            } else if(typeof ArryLength[i] === "number" && ArryLength[i] % 1 === 0 && ArryLength[i] < 25){
+                ArryLength[i] = ArryLength[i].toFixed(2);
+                // console.log(ArryLength[i]);
+            }
+            else if(typeof ArryLength[i] === "number" && ArryLength[i] % 1 !== 0 ){
+                ArryLength[i] = Math.ceil(ArryLength[i]);
+                // console.log(ArryLength[i]);
+            }
+        } 
+
+        document.getElementById("FinalArryLength").innerHTML = ArryLength;
+        // console.log(ArryLength,"final arry");
+    </script>
+</div> 
+<div>
+    <h4>3. Create an array. if array value is not string and value is less then 10 then find square.<br>
+    if square is greater then 150 then return power value of any power. if array value is string then <br>
+    add 3 new string value from 2nd position without loop.</h4>
+        <p id="3finalArray"></p>
+        <p id="3finalArray1"></p>
+    <script>
+        let SquareArry = ["akash","ankit",9,12,3,"mitul",50]
+        let finalArray = [];
+        for(let SquArry in SquareArry){
+            // console.log(SquArry);   
+            if(typeof SquareArry[SquArry] === "number" && SquareArry[SquArry] < 10){
+                var newVal = SquareArry[SquArry] * SquareArry[SquArry];
+              
+                if(newVal > 150){
+                    newVal = Math.pow(SquareArry[SquArry],3);
+                }
+                if(SquArry < 2)
+                    finalArray.splice(SquArry,0,newVal);
+                else
+                    finalArray.push(newVal);
+            }else if(typeof SquareArry[SquArry] === 'string') {
+                if(SquArry < 2){
+                    finalArray.splice(SquArry,0,SquareArry[SquArry]);
+                }else{
+                    finalArray.push(SquareArry[SquArry]);
+                }
+                finalArray.splice(2,0,"grape", "kiwi", "melon");
+                    
+            }else{
+                finalArray.push(SquareArry[SquArry]);
+            }
+        
+        }
+        document.getElementById('3finalArray').innerHTML=SquareArry;
+        document.getElementById('3finalArray1').innerHTML=finalArray;
+
+    </script>
+</div>
+<div>
+    <h4>4.1 Take user input and print table of given number (while loop)(Open in console)</h4>
+    <input type="number" id="table">    
+    <button onclick="table()">Click</button>
+    <script>
+        function table(){
+        var i = 1
+        var table = document.getElementById("table").value 
+        while(i <= 10){
+            console.log(table +"*"+ i + "=" + (table*i));
+            i++;
+        }
+    }
+    </script>
+</div>
+<div>
+    <h4>4.2 Take user input and print table of given number (Do while loop)(Open in console)</h4>
+    <input type="number" id="table1">
+    <button onclick="table1()">Click</button>
+
+    <script>
+        function table1(){
+            var i =1
+            var table1 = document.getElementById("table1").value;
+
+            do{
+                console.log(table1 +"*"+ i + "=" + (table1*i));
+                i++; 
+            }while(i <= 10);
+        }
+    </script>
+</div>
+<div>
+    <h4>4.3 Take user input and print table of given number (For loop)(Open in console)</h4>
+    <input type="number" id="table2">
+    <button onclick="table2()">Click</button>
+    <script>
+        function table2(){
+            var table2 = document.getElementById("table2").value;
+
+            for(i=1; i <= 10; i++){
+                console.log(table2 +"*"+ i + "=" + (table2*i));
+            }
+        }
+    </script>
+</div>
+<div>
+    <h4> OBJECT </h4>
+    <p id="akash"></p>
+    <script>
+
+       let akash = {
+            "id": "0001",
+            "type": "donut",
+            "name": "Cake",
+            "ppu": 0.55,
+            "batters":
+                {
+                    "batter":
+                        [
+                            { "id": "1001", "type": ["Fiesta", "Focus", "Mustang"]},
+                            { "id": "1002", "type": ["Chocolate"] },
+                            { "id": "1003", "type": ["Blueberry"] },
+                            { "id": "1004", "type": ["Devil's Food"] }
+                        ]
+                },
+            "topping":
+                [
+                    { "id": "5001", "type": "None" },
+                    { "id": "5002", "type": "Glazed" },
+                    { "id": "5005", "type": "Sugar" },
+                    { "id": "5007", "type": "Powdered Sugar" },
+                    { "id": "5006", "type": "Chocolate with Sprinkles" },
+                    { "id": "5003", "type": "Chocolate" },
+                    { "id": "5004", "type": "Maple" }
+                ]
+        }
+
+        document.getElementById("akash").innerText = akash.batters;
+    </script>
+</div>
+</body>
+</html>
